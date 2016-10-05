@@ -148,7 +148,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Controller.cpp" />
+    <ClCompile Include="Source\InputHandler.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Model.cpp" />
+    <ClCompile Include="Source\View.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Controller.h" />
+    <ClInclude Include="Source\FileReader.h" />
+    <ClInclude Include="Source\InputHandler.h" />
+    <ClInclude Include="Source\Model.h" />
+    <ClInclude Include="Source\VDeleter.h" />
+    <ClInclude Include="Source\View.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\shader.frag" />
+    <None Include="Shaders\shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,10 +13,80 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{40544c1b-192e-4199-bd24-9b03beecbbbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Core">
+      <UniqueIdentifier>{80bae660-ae5e-4a05-9991-279e36bf9e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{ac8907c5-a42f-4e5a-8540-6a4254faf3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\MVC">
+      <UniqueIdentifier>{a9e0a324-ccc1-4623-965d-89250e23204a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\MVC">
+      <UniqueIdentifier>{fd346333-8370-4b07-8d6b-dce279dafed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Vulkan Deleter">
+      <UniqueIdentifier>{2e4b83f2-85d7-4938-894f-731a3f1a5408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Input Handling">
+      <UniqueIdentifier>{86c81577-b44d-4c91-9ee8-70ba6ac17624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Input Handling">
+      <UniqueIdentifier>{aed59791-6d1c-4e53-bb97-cfe6608913e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{f2465013-54b8-4e9d-903b-df73359354f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\File Reader">
+      <UniqueIdentifier>{511f2a8a-6532-433a-b24d-6f06c294778f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Source\Controller.cpp">
+      <Filter>Source Files\Framework\MVC</Filter>
     </ClCompile>
+    <ClCompile Include="Source\View.cpp">
+      <Filter>Source Files\Framework\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Model.cpp">
+      <Filter>Source Files\Framework\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files\Framework\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputHandler.cpp">
+      <Filter>Source Files\Framework\Input Handling</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\View.h">
+      <Filter>Header Files\Framework\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Controller.h">
+      <Filter>Header Files\Framework\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Model.h">
+      <Filter>Header Files\Framework\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\VDeleter.h">
+      <Filter>Header Files\Framework\Vulkan Deleter</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputHandler.h">
+      <Filter>Header Files\Framework\Input Handling</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FileReader.h">
+      <Filter>Header Files\Framework\File Reader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\shader.vert">
+      <Filter>Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
